@@ -26,7 +26,7 @@ class ItemModelTest(TestCase):
         self.assertEqual(first_item.text, first_saved_item.text)
         self.assertEqual(second_item.text, second_saved_item.text)
 
-
+'''
 class HomePageTest(TestCase):
 
     def test_root_url_resolves(self):
@@ -76,10 +76,9 @@ class HomePageTest(TestCase):
         self.assertEqual(response.status_code, 302)
         self.assertEqual(response['location'], '/')
 
-        '''
-        expected_html = render_to_string(
-            'home.html',
-            {'new_item_text': 'A new list item'}
-        )
-        self.assertEqual(response.content.decode(), expected_html)
-        '''
+'''
+        #expected_html = render_to_string(
+        #    'home.html',
+        #    {'new_item_text': 'A new list item'}
+        #)
+        #self.assertEqual(response.content.decode(), expected_html)
